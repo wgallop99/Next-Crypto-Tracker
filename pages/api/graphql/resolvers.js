@@ -1,6 +1,6 @@
 import Nomics from 'nomics';
 
-const nomics =  ({
+const nomics =  new Nomics({
     apiKey: process.env.API_KEY
 })
 

@@ -8,7 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "apollo-server-micro": "^2.11.0",
     "next": "9.3.2",
+    "nomics": "^0.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }
