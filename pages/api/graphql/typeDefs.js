@@ -24,7 +24,7 @@ const typeDefs = gql`
   }
   type Query {
     getCoins: [Coin]
-    getCoinDetails(coinid: String!, interval: String!): CoinDetails
+    getCoinDetails(coinId: String!, interval: String!): CoinDetails
   }
 `
 
