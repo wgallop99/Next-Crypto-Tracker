@@ -1,4 +1,4 @@
-import Header from "next/head";
+import Head from "next/head";
 import { Container } from "semantic-ui-react";
 import Header from "./Header";
 
