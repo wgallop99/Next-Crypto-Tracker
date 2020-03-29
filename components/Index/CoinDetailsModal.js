@@ -10,7 +10,7 @@ const CoinDetailModals = ({ isModalOpen, onClose, coinDetails }) => {
 
   const { data, loading, error, refetch } = useQuery(GET_COIN_DETAILS, {
     variables: {
-      coinid: `${coinDetails.id}`,
+      coinId: `${coinDetails.id}`,
       interval: '1d'
     }
   })
@@ -20,7 +20,7 @@ const CoinDetailModals = ({ isModalOpen, onClose, coinDetails }) => {
     setInterval(newInterval)
 
     refetch({
-      coinid: `${coinDetails.id}`,
+      coinId: `${coinDetails.id}`,
       interval: newInterval
     })
   }
@@ -52,7 +52,7 @@ const CoinDetailModals = ({ isModalOpen, onClose, coinDetails }) => {
               <Modal.Description>
                 <Grid columns={2}>
                   <Grid.Column>
-                    <Image wrapped size="medium" src={coinDetails.logo_url} />
+                    <Image wrapped size="small" src={coinDetails.logo_url} />
                   </Grid.Column>
                   <Grid.Column>
                     <CoinDetailsModalTable data={data} coinDetails={coinDetails} />
